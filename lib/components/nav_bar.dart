@@ -10,8 +10,9 @@ class NavBar extends StatelessWidget {
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(Icons.home),
+          icon: Icon(Icons.home, color: Colors.white),
           label: 'Home',
+          backgroundColor: Colors.grey,
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.person),
@@ -21,14 +22,27 @@ class NavBar extends StatelessWidget {
           icon: Icon(Icons.history),
           label: 'History',
         ),
+        BottomNavigationBarItem(icon: Icon(Icons.add), label: 'New Request')
       ],
       currentIndex: 0,
       selectedItemColor: Colors.amber[800],
       onTap: (index) {
-        print(index);
-        Navigator.pushNamed(
-            context,
-            '/${index == 0 ? 'home' : index == 1 ? 'myprofile' : 'history'}');
+        switch (index) {
+          case 0:
+            Navigator.pushNamed(context, '/home');
+            break;
+          case 1:
+            Navigator.pushNamed(context, '/myprofile');
+            break;
+          case 2:
+            Navigator.pushNamed(context, '/history');
+            break;
+          case 3:
+            Navigator.pushNamed(context, '/request_form');
+            break;
+          default:
+            break;
+        }
       },
     );
   }

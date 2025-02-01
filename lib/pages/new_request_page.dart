@@ -10,6 +10,13 @@ class NewRequestPage extends StatefulWidget {
 class _NewRequestPageState extends State<NewRequestPage> {
   @override
   Widget build(BuildContext context) {
-    return Text("New Request Page");
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("New Request Page"),
+      ),
+      body: Center(
+        child: Text("New Request Page"),
+      ),
+    );
   }
 }

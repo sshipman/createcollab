@@ -10,6 +10,13 @@ class RequestDetailsPage extends StatefulWidget {
 class _RequestDetailsPageState extends State<RequestDetailsPage> {
   @override
   Widget build(BuildContext context) {
-    return RequestDetailsPage();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Request Details Page"),
+      ),
+      body: Center(
+        child: Text("Request Details Page"),
+      ),
+    );
   }
 }

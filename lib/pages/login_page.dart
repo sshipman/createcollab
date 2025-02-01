@@ -12,11 +12,19 @@ class Login extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Login Page"),
+              SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/home');
                 },
-                child: Text("OAuth Here"),
+                child: Text("Existing User Logs In"),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/registration');
+                },
+                child: Text("New User Signs Up"),
               ),
             ],
           ),
