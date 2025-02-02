@@ -2,16 +2,16 @@ import {DocumentSnapshot} from "firebase-admin/firestore";
 
 export class HelpRequest {
   id: string;
-  geoHash: string;
+  geohash: string;
   lat: number;
   lng: number;
   description: string;
   status: HelpRequestStatus;
 
-  constructor(id: string, geoHash:string, lat: number, lng: number,
+  constructor(id: string, geohash:string, lat: number, lng: number,
     description: string, status: HelpRequestStatus = HelpRequestStatus.OPEN) {
     this.id = id;
-    this.geoHash = geoHash;
+    this.geohash = geohash;
     this.lat = lat;
     this.lng = lng;
     this.description = description;
@@ -22,7 +22,7 @@ export class HelpRequest {
     // it had better exist!
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const data = doc.data()!;
-    return new HelpRequest(data.id, data.geoHash, data.lat, data.lng, data.description);
+    return new HelpRequest(data.id, data.geohash, data.lat, data.lng, data.description);
   }
 }
 
