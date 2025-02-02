@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993807243061",
+    "project_id": "createcollab-193aa",
+    "storage_bucket": "createcollab-193aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993807243061:android:8075c399d2bb782b925e7c",
+        "android_client_info": {
+          "package_name": "org.createcollab.createcollab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993807243061-8mv7jtvfprtspfb6u1edokohhe7cld8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGQujZQwtLLIcUsl4JairMt9_1peT4x6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993807243061-8mv7jtvfprtspfb6u1edokohhe7cld8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
